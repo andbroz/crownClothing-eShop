@@ -5,3 +5,4 @@ Based on course [Complete React Developer in 2020 (w/ Redux, Hooks, GraphQL)](ht
 ## Tech Stack
 
 -REACT
+-SASS
