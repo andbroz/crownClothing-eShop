@@ -4,5 +4,6 @@ Based on course [Complete React Developer in 2020 (w/ Redux, Hooks, GraphQL)](ht
 
 ## Tech Stack
 
--REACT
--SASS
+- REACT
+- SASS
+- REACT ROUTER DOM (https://www.npmjs.com/package/react-router-dom)
