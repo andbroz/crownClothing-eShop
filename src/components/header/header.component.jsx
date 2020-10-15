@@ -13,7 +13,7 @@ function handleSignOut() {
   auth.signOut();
 }
 
-function Header({ currentUser }) {
+function Header({ currentUser, hidden }) {
   return (
     <header className='header'>
       <Link className='logo-container' to='/'>
@@ -37,13 +37,14 @@ function Header({ currentUser }) {
         )}
         <CartIcon />
       </nav>
-      <CartDropdown />
+      {hidden ? null : <CartDropdown />}
     </header>
   );
 }
 
-const mapStateToProps = state => ({
-  currentUser: state.user.currentUser,
+const mapStateToProps = ({ user: { currentUser }, cart: { hidden } }) => ({
+  currentUser,
+  hidden,
 });
 
 export default connect(mapStateToProps)(Header);
