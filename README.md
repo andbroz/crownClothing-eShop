@@ -6,7 +6,10 @@ Based on course [Complete React Developer in 2020 (w/ Redux, Hooks, GraphQL)](ht
 
 - REACT
 - SASS
-- REACT ROUTER DOM (https://www.npmjs.com/package/react-router-dom)
+- [REACT ROUTER DOM](https://www.npmjs.com/package/react-router-dom)
 - Firestore Authentication
 - Firestore Firebase
-- Redux, React-Redux, Redux-Logger
+- Redux,
+  - React-Redux,
+  - Redux-Logger,
+  - [Reselect](https://github.com/reduxjs/reselect)
