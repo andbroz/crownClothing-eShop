@@ -10,6 +10,7 @@ Based on course [Complete React Developer in 2020 (w/ Redux, Hooks, GraphQL)](ht
 - Firestore Authentication
 - Firestore Firebase
 - Redux,
-  - React-Redux,
-  - Redux-Logger,
+  - [React-Redux](https://github.com/reduxjs/react-redux)
+  - [Redux-Logger](https://github.com/LogRocket/redux-logger)
   - [Reselect](https://github.com/reduxjs/reselect)
+  - [Redux-Persist](https://github.com/rt2zz/redux-persist#readme)
