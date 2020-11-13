@@ -10,7 +10,9 @@ import { selectCurrentUser } from '../../redux/user/user.selectors';
 import { selectCartHidden } from '../../redux/cart/cart.selectors';
 
 import { ReactComponent as Logo } from '../../assets/crown.svg';
-import './header.styles.scss';
+// import './header.styles.scss';
+
+import { HeaderContainer, LogoContainer, OptionsContainer, OptionDiv, OptionLink } from './header.styles';
 
 function handleSignOut() {
   auth.signOut();
@@ -18,30 +20,22 @@ function handleSignOut() {
 
 function Header({ currentUser, hidden }) {
   return (
-    <header className='header'>
-      <Link className='logo-container' to='/'>
+    <HeaderContainer>
+      <LogoContainer to='/'>
         <Logo className='logo' />
-      </Link>
-      <nav className='options'>
-        <Link className='option' to='/shop'>
-          SHOP
-        </Link>
-        <Link className='option' to='/contact'>
-          CONTACT
-        </Link>
+      </LogoContainer>
+      <OptionsContainer>
+        <OptionLink to='/shop'>SHOP</OptionLink>
+        <OptionLink to='/contact'>CONTACT</OptionLink>
         {currentUser ? (
-          <div className='option' onClick={handleSignOut}>
-            SIGN OUT
-          </div>
+          <OptionDiv onClick={handleSignOut}>SIGN OUT</OptionDiv>
         ) : (
-          <Link className='option' to='/signin'>
-            SIGN IN
-          </Link>
+          <OptionLink to='/signin'>SIGN IN</OptionLink>
         )}
         <CartIcon />
-      </nav>
+      </OptionsContainer>
       {hidden ? null : <CartDropdown />}
-    </header>
+    </HeaderContainer>
   );
 }
 
