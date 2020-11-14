@@ -15,7 +15,7 @@ function CollectionItem({ item, addItem }) {
         <span className='collection-item_name'>{name}</span>
         <span className='collection-item_price'>{price}</span>
       </div>
-      <CustomButton inverted onClick={() => addItem(item)}>
+      <CustomButton className='add-btn' inverted onClick={() => addItem(item)}>
         Add to cart
       </CustomButton>
     </div>
