@@ -1,12 +1,17 @@
 body {
-	margin: 0;
-	padding: 20px 60px;
-	box-sizing: border-box;
-	font-family: 'Open Sans Condensed', sans-serif;
+  margin: 0;
+  padding: 20px 60px;
+  box-sizing: border-box;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 *,
 *::before,
 *::after {
-	box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
