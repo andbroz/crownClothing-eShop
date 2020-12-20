@@ -5,6 +5,7 @@ Based on course [Complete React Developer in 2020 (w/ Redux, Hooks, GraphQL)](ht
 ## Tech Stack
 
 - REACT
+  - HOOKS
 - SASS, Styled Components
 - [REACT ROUTER DOM](https://www.npmjs.com/package/react-router-dom)
 - Firestore Authentication
@@ -14,3 +15,4 @@ Based on course [Complete React Developer in 2020 (w/ Redux, Hooks, GraphQL)](ht
   - [Redux-Logger](https://github.com/LogRocket/redux-logger)
   - [Reselect](https://github.com/reduxjs/reselect)
   - [Redux-Persist](https://github.com/rt2zz/redux-persist#readme)
+  - [Redux-Saga](https://redux-saga.js.org/)
